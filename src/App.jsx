@@ -14,7 +14,7 @@ export default function App() {
       <div>
          <Routes>
             <Route path="space-travel/" element={<Layout />}>
-               <Route index element={<Homepage />} />
+               <Route path="space-travel/" element={<Homepage />} />
                <Route path="space-travel/destination" element={<Destination />} />
                <Route path="space-travel/crew" element={<Crew />} />
                <Route path="space-travel/technology" element={<Technology />} />
