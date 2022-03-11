@@ -43,29 +43,41 @@ export default function Header(props) {
    return (
       <header className="primary-header flex">
          <div>
-            <Link to="/"><img src={mainLogo} alt="space tourism logo" className="logo"></img></Link>
+            <Link to={process.env.PUBLIC_URL + '/destination'}><img src={mainLogo} alt="space tourism logo" className="logo"></img></Link>
          </div>
          <nav ref={ref}>
             <button className="mobile-nav-toggle" onClick={toggleBugrer} style={styles}><span className="sr-only" >Menu</span></button>
             <ul data-visible={showBurger} className="primary-navigation underline-indicators flex">
                <li className={activeTab("")} >
-                  <Link className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" to="/" onClick={toggleBugrer}>
-                     <span aria-hidden="true">00</span>Home
+                  <Link 
+                     className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" 
+                     to={process.env.PUBLIC_URL + '/'} 
+                     onClick={toggleBugrer}>
+                        <span aria-hidden="true">00</span>Home
                   </Link>
                </li>
                <li className={activeTab("Destination")} >
-                  <Link className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" to="/Destination" onClick={toggleBugrer}>
-                     <span aria-hidden="true">01</span>Destination
+                  <Link 
+                     className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" 
+                     to={process.env.PUBLIC_URL + '/destination'} 
+                     onClick={toggleBugrer}>
+                        <span aria-hidden="true">01</span>Destination
                   </Link>
                </li>
                <li className={activeTab("Crew")} > 
-                  <Link className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" to="/Crew" onClick={toggleBugrer}>
-                     <span aria-hidden="true">02</span>Crew
+                  <Link  
+                     className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" 
+                     to={process.env.PUBLIC_URL + '/crew'} 
+                     onClick={toggleBugrer}>
+                        <span aria-hidden="true">02</span>Crew
                   </Link>
                </li>
                <li className={activeTab("Technology")} >
-                  <Link className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" to="/Technology" onClick={toggleBugrer}>
-                     <span aria-hidden="true">03</span>Technology
+                  <Link 
+                     className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" 
+                     to={process.env.PUBLIC_URL + '/technology'} 
+                     onClick={toggleBugrer}>
+                        <span aria-hidden="true">03</span>Technology
                   </Link>
                </li>
             </ul>
