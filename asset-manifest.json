@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-travel/static/css/main.20dbb792.css",
+    "main.css": "/space-travel/static/css/main.16b7a9db.css",
     "main.js": "/space-travel/static/js/main.efbaa0b9.js",
     "static/media/image-launch-vehicle-landscape.jpg": "/space-travel/static/media/image-launch-vehicle-landscape.cf3a4542f8427b3bcddf.jpg",
     "static/media/image-victor-glover.png": "/space-travel/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
@@ -38,11 +38,11 @@
     "static/media/logo.svg": "/space-travel/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/space-travel/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/space-travel/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.20dbb792.css.map": "/space-travel/static/css/main.20dbb792.css.map",
+    "main.16b7a9db.css.map": "/space-travel/static/css/main.16b7a9db.css.map",
     "main.efbaa0b9.js.map": "/space-travel/static/js/main.efbaa0b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.20dbb792.css",
+    "static/css/main.16b7a9db.css",
     "static/js/main.efbaa0b9.js"
   ]
 }
