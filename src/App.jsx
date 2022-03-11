@@ -13,11 +13,11 @@ export default function App() {
    return(
       <div>
          <Routes>
-            <Route path="space-travel/" element={<Layout />}>
-               <Route path="space-travel/" element={<Homepage />} />
-               <Route path="space-travel/destination" element={<Destination />} />
-               <Route path="space-travel/crew" element={<Crew />} />
-               <Route path="space-travel/technology" element={<Technology />} />
+            <Route path={process.env.PUBLIC_URL + '/'} element={<Layout />}>
+               <Route index element={<Homepage />} />
+               <Route path={process.env.PUBLIC_URL + '/destination'} element={<Destination />} />
+               <Route path={process.env.PUBLIC_URL + '/crew'} element={<Crew />} />
+               <Route path={process.env.PUBLIC_URL + '/technology'} element={<Technology />} />
             </Route>
          </Routes>
       </div>
