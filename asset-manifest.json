@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/space-travel/static/css/main.08189db7.css",
-    "main.js": "/space-travel/static/js/main.a9ce3b1e.js",
+    "main.js": "/space-travel/static/js/main.efbaa0b9.js",
     "static/media/image-launch-vehicle-landscape.jpg": "/space-travel/static/media/image-launch-vehicle-landscape.cf3a4542f8427b3bcddf.jpg",
     "static/media/image-victor-glover.png": "/space-travel/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/space-travel/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
@@ -39,10 +39,10 @@
     "static/media/icon-close.svg": "/space-travel/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/space-travel/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
     "main.08189db7.css.map": "/space-travel/static/css/main.08189db7.css.map",
-    "main.a9ce3b1e.js.map": "/space-travel/static/js/main.a9ce3b1e.js.map"
+    "main.efbaa0b9.js.map": "/space-travel/static/js/main.efbaa0b9.js.map"
   },
   "entrypoints": [
     "static/css/main.08189db7.css",
-    "static/js/main.a9ce3b1e.js"
+    "static/js/main.efbaa0b9.js"
   ]
 }
