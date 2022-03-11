@@ -1,0 +1,101 @@
+
+.underline-indicators * {
+   cursor: pointer;
+   border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
+   padding: var(--underline-gap, .5rem) 0;
+}
+
+.underline-indicators label:hover,
+.underline-indicators label:focus{
+   border-color: hsl( var(--clr-white) / .5);
+}
+
+.underline-indicators > .active,
+.underline-indicators input[type="radio"]:checked + label {
+   color: hsl( var(--clr-white) / 1);
+   border-color: hsl( var(--clr-white) / 1);
+}
+
+input[type="radio"] {
+   display: none;
+}
+
+.tab-list {
+   --gap: min(4vw, 2em);
+}
+
+.large-button {
+   font-size: 2rem;
+   position: relative;
+   z-index: 1;
+   display: inline-grid;
+   place-items: center;
+   padding: 0 2em;
+   border-radius: 50%;
+   aspect-ratio: 1;
+   text-decoration: none;
+}
+
+.large-button::after {
+   content: '';
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   background: hsl( var(--clr-white) / .1);
+   border-radius: 50%;
+   opacity: 0;
+   transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+
+.large-button:hover::after,
+.large-button:focus::after {
+   opacity: 1;
+   transform: scale(1.5);
+}
+
+.dot-indicators label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+   padding: .5em;
+}
+
+.dot-indicators label:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	inset: 0;
+   border-radius: 50%;
+   background-color: hsl( var(--clr-white) / .25);
+}
+ 
+.dot-indicators input[type=radio]:checked + label:before {
+	background-color: hsl( var(--clr-white) / 1); 
+}
+
+.dot-indicators label:hover:before {
+	background-color: hsl( var(--clr-white) / .5);
+}
+
+.numbered-indicators {
+   --gap: 1em;
+}
+
+.numbered-indicators label {
+   cursor: pointer;
+   display: inline-grid;
+   width: 2.5em;
+   border-radius: 50%;
+   place-items: center;
+   aspect-ratio: 1;
+   border: 1px solid hsl( var(--clr-white) / .25);
+}
+
+.numbered-indicators label:hover {
+   border: 1px solid hsl( var(--clr-white) / .5);
+}
+
+.numbered-indicators input[type=radio]:checked + label {
+	border: 1px solid hsl( var(--clr-white) / 1); 
+}

@@ -1,0 +1,111 @@
+.logo {
+   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+   justify-content: space-between;
+   align-items: center;
+}
+
+.primary-navigation {
+   --gap: clamp(1.5rem, 5vw, 3.5rem);
+   --underline-gap: 0;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   background: hsl( var(--clr-white) / 0.05);
+   backdrop-filter: blur(1.5rem);
+}
+
+.primary-navigation .primary-navigation--link {
+   text-decoration: none;
+}
+
+.primary-navigation .primary-navigation--link > span {
+   font-weight: 700;
+   margin-right: .5em;
+}
+
+.mobile-nav-toggle {
+   display: none;
+}
+
+@media (max-width: 42rem) {
+   .primary-navigation {
+      --underline-gap: .5rem;
+      position: fixed;
+      z-index: 1000;
+      inset: 0 0 0 30%;
+      list-style: none;
+      padding: min(20rem, 15vh) 2rem;
+      margin: 0;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 500ms ease-in-out;
+   }
+   
+   .primary-navigation[data-visible="true"] {
+      transform: translateX(0);
+   }
+
+   .primary-navigation.underline-indicators > li > * {
+      display: block;
+      width: 100%;
+   }
+   
+   .mobile-nav-toggle {
+      display: block;
+      position: absolute;
+      z-index: 2000;
+      right: 1rem;
+      top: 2rem;
+      background: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 1.5rem;
+      aspect-ratio: 1;
+      border: 0;
+   }
+   
+   .mobile-nav-toggle:focus-visible {
+      outline: 5px solid white;
+      outline-offset: 5px;
+   }
+}
+
+@media (min-width: 42rem) {
+   .primary-navigation {
+      padding-inline: clamp(3rem, 5vw, 7rem);
+   }
+   .primary-navigation--link {
+      display: block;
+      padding-block: 2rem;
+   }
+}
+
+@media (min-width: 42.01rem) and (max-width: 54.99rem) {
+   .primary-navigation .primary-navigation--link > span {
+      display: none;
+   }
+}
+
+@media (min-width: 55rem) {
+   .primary-header::after {
+      content: '';
+      display: block;
+      position: relative;
+      height: 1px;
+      width: 100%;
+      margin-right: -2.5rem;
+      background: hsl( var(--clr-white) / .25);
+      order: 1;
+   }
+    
+   nav {
+      order: 2;
+   }
+   
+   .primary-navigation {
+      margin-block: 2rem;
+   }
+}
