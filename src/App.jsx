@@ -13,7 +13,7 @@ export default function App() {
    return(
       <div>
          <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="space-travel/" element={<Layout />}>
                <Route index element={<Homepage />} />
                <Route path="Destination" element={<Destination />} />
                <Route path="Crew" element={<Crew />} />
