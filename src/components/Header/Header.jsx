@@ -37,13 +37,13 @@ export default function Header(props) {
    }
 
    // * Function that undelines the chosen link (try to make it with navlink)
-   const activeTab = tabLink => window.location.pathname === `/${tabLink}` ? "active" : ""
+   const activeTab = tabLink => window.location.pathname === `${process.env.PUBLIC_URL}/${tabLink}` ? "active" : ""
 
    // * Header rendering
    return (
       <header className="primary-header flex">
          <div>
-            <Link to={process.env.PUBLIC_URL + '/destination'}><img src={mainLogo} alt="space tourism logo" className="logo"></img></Link>
+            <Link to={process.env.PUBLIC_URL + '/'}><img src={mainLogo} alt="space tourism logo" className="logo"></img></Link>
          </div>
          <nav ref={ref}>
             <button className="mobile-nav-toggle" onClick={toggleBugrer} style={styles}><span className="sr-only" >Menu</span></button>
@@ -56,7 +56,7 @@ export default function Header(props) {
                         <span aria-hidden="true">00</span>Home
                   </Link>
                </li>
-               <li className={activeTab("Destination")} >
+               <li className={activeTab("destination")} >
                   <Link 
                      className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" 
                      to={process.env.PUBLIC_URL + '/destination'} 
@@ -64,7 +64,7 @@ export default function Header(props) {
                         <span aria-hidden="true">01</span>Destination
                   </Link>
                </li>
-               <li className={activeTab("Crew")} > 
+               <li className={activeTab("crew")} > 
                   <Link  
                      className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" 
                      to={process.env.PUBLIC_URL + '/crew'} 
@@ -72,7 +72,7 @@ export default function Header(props) {
                         <span aria-hidden="true">02</span>Crew
                   </Link>
                </li>
-               <li className={activeTab("Technology")} >
+               <li className={activeTab("technology")} >
                   <Link 
                      className="primary-navigation--link ff-sans-cond uppercase text-white letter-spacing-2" 
                      to={process.env.PUBLIC_URL + '/technology'} 
