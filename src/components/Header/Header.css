@@ -13,8 +13,8 @@
    list-style: none;
    padding: 0;
    margin: 0;
-   background: hsl( var(--clr-dark) / 0.5);
-   backdrop-filter: blur(3.5rem);
+   background: hsl( var(--clr-white) / 0.5);
+   backdrop-filter: blur(1.5rem);
 }
 
 .primary-navigation .primary-navigation--link {
@@ -76,6 +76,8 @@
 @media (min-width: 42rem) {
    .primary-navigation {
       padding-inline: clamp(3rem, 5vw, 7rem);
+      background: hsl( var(--clr-dark) / 0.5);
+      backdrop-filter: blur(3.5rem);
    }
    .primary-navigation--link {
       display: block;
