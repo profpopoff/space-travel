@@ -130,7 +130,7 @@
 
 @media (min-width: 42rem) {
 
-   /* * global crew */
+   /* * global */
 
    .numbered-title {
       justify-self: start;
@@ -144,7 +144,7 @@
       justify-content: space-evenly;
    }
    
-   /* * technology crew */
+   /* * technology */
 
    .grid-container--crew {
       padding-bottom: 0;
